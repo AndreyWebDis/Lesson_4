@@ -1,0 +1,131 @@
+@import "null.css";
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat:700&display=swap);
+
+/* ========================== */
+
+/* подключение сторонних шрифтов которых нет в гугл фонтс.
+1)наименование шрифта.
+2)формат шрифта-подключается сначала шрифт, который весит меньше всего.
+3)начертание
+4)стиль
+5)функция для оптимизации*/
+
+@font-face {
+   font-family: 'Muller';
+   src: url('MullerBold.woff2') format('woff2'),
+       url('MullerBold.woff') format('woff');
+   font-weight: 700;
+   font-style: normal;
+   font-display: swap;
+}
+@font-face {
+   font-family: 'Muller';
+   src: url('MullerMedium.woff2') format('woff2'),
+       url('MullerMedium.woff') format('woff');
+   font-weight: 500;
+   font-style: normal;
+   font-display: swap;
+}
+@font-face {
+   font-family: 'Muller';
+   src: url('MullerRegular.woff2') format('woff2'),
+       url('MullerRegular.woff') format('woff');
+   font-weight: 400;
+   font-style: normal;
+   font-display: swap;
+}
+
+
+/* ================================= */
+body{
+   font-size: 20px;
+   line-height: 1.2;
+   font-family: Muller;
+   font-weight: 500;
+}
+
+.conent__title {
+   font-size: 50px;
+   font-weight: 700;
+   color: royalblue;
+   text-align: center;
+   word-spacing: 10px;
+   text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+.content__sub-title {
+   font-family: roboto;
+   font-size: 35px;
+   font-weight: 400;
+   font-style: italic;
+   text-align: center;
+   color: salmon;
+   text-decoration: underline;
+}
+.content__text {
+   color: #CAD1E3;
+   text-shadow: -5px -5px 5px rgba(0, 0, 0, 0.3);
+}
+.white{
+   text-shadow: -5px 5px 5px #000;
+   color: #D5E382;
+}
+.content__list {
+ text-indent: 50px;
+}
+.content__item{
+   font-size: 25px;
+   text-align: center;
+}
+.content__item_1 {
+   font-size: 15px;
+   text-transform: uppercase;
+   font-weight: 700;
+}
+.content__item_2 {
+   font-size: 40px;
+   text-shadow: -5px 5px 5px #000;
+   color: #fff;
+}
+.content__item_3 {
+   text-align: right;
+   text-decoration: overline;
+}
+.content__item_4 {
+   text-decoration: underline;
+}
+.content__item_5 {
+   text-decoration: line-through;
+   color: red;
+}
+.content__item_6 {
+   text-align: left;
+}
+.right {
+   font-size: 25px;
+   color: #E727E7;
+   text-align: right;
+   text-shadow: -5px -5px 5px #EB6BEB;
+}
+.right span{
+   text-decoration: line-through;
+   text-transform: uppercase;
+}
+.center {
+   text-align: center;
+   font-size: 30px;
+   color: #82E3A1;
+   text-shadow: none;
+   text-transform: capitalize;
+   letter-spacing: 1.2px;
+}
+
+.content__link {
+   font-family: Montserrat;
+   font-size: 25px;
+   color: red;
+   line-height: 1.2;
+   letter-spacing: 15px;
+   text-transform: uppercase;
+   text-decoration: underline;
+}
